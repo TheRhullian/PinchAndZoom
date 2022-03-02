@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7BD899C27CFB9BD0014341E /* PinchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD899B27CFB9BD0014341E /* PinchAppApp.swift */; };
+		C7BD899C27CFB9BD0014341E /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD899B27CFB9BD0014341E /* PinchApp.swift */; };
 		C7BD899E27CFB9BD0014341E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD899D27CFB9BD0014341E /* ContentView.swift */; };
 		C7BD89A027CFB9BE0014341E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BD899F27CFB9BE0014341E /* Assets.xcassets */; };
 		C7BD89A327CFB9BE0014341E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BD89A227CFB9BE0014341E /* Preview Assets.xcassets */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		C7BD899827CFB9BD0014341E /* PinchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7BD899B27CFB9BD0014341E /* PinchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchAppApp.swift; sourceTree = "<group>"; };
+		C7BD899B27CFB9BD0014341E /* PinchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 		C7BD899D27CFB9BD0014341E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7BD899F27CFB9BE0014341E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7BD89A227CFB9BE0014341E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -94,9 +94,11 @@
 		C7BD899A27CFB9BD0014341E /* PinchApp */ = {
 			isa = PBXGroup;
 			children = (
-				C7BD899B27CFB9BD0014341E /* PinchAppApp.swift */,
-				C7BD899D27CFB9BD0014341E /* ContentView.swift */,
-				C7BD899F27CFB9BE0014341E /* Assets.xcassets */,
+				C7BD89C827CFBA290014341E /* Utilities */,
+				C7BD89C727CFBA1C0014341E /* Resources */,
+				C7BD89C627CFBA090014341E /* Views */,
+				C7BD89C527CFBA040014341E /* Modules */,
+				C7BD899B27CFB9BD0014341E /* PinchApp.swift */,
 				C7BD89A127CFB9BE0014341E /* Preview Content */,
 			);
 			path = PinchApp;
@@ -125,6 +127,36 @@
 				C7BD89B827CFB9BF0014341E /* PinchAppUITestsLaunchTests.swift */,
 			);
 			path = PinchAppUITests;
+			sourceTree = "<group>";
+		};
+		C7BD89C527CFBA040014341E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C7BD89C627CFBA090014341E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7BD899D27CFB9BD0014341E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7BD89C727CFBA1C0014341E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7BD899F27CFB9BE0014341E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C7BD89C827CFBA290014341E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7BD899E27CFB9BD0014341E /* ContentView.swift in Sources */,
-				C7BD899C27CFB9BD0014341E /* PinchAppApp.swift in Sources */,
+				C7BD899C27CFB9BD0014341E /* PinchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
