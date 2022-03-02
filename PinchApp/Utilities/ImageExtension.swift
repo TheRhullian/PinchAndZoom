@@ -26,7 +26,31 @@ extension Image {
         Image("thumb-magazine-front-cover")
     }
     
+    // System Symbols
+    static var systemCircleCircle: Image {
+        Image(systemName: "circle.circle")
+    }
+    
+    static var systemArrowUpLeftAndDownRight: Image {
+        Image(systemName: "arrow.up.left.and.arrow.down.right")
+    }
+    
+    static var systemArrowLeftRight: Image {
+        Image(systemName: "arrow.left.and.right")
+    }
+    
+    static var systemArrowUpDown: Image {
+        Image(systemName: "arrow.up.and.down")
+    }
+    
     // METHODS
+    func symbolConfiguration() -> some View {
+        self
+            .symbolRenderingMode(.hierarchical)
+            .resizable()
+            .frame(width: 30, height: 30)
+    }
+    
     func pageConfiguration() -> some View {
         self
             .resizable()

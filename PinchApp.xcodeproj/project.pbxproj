@@ -15,6 +15,7 @@
 		C7BD89B727CFB9BF0014341E /* PinchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD89B627CFB9BF0014341E /* PinchAppUITests.swift */; };
 		C7BD89B927CFB9BF0014341E /* PinchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD89B827CFB9BF0014341E /* PinchAppUITestsLaunchTests.swift */; };
 		C7BD89CA27CFBCB30014341E /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD89C927CFBCB30014341E /* ImageExtension.swift */; };
+		C7BD89CC27CFC54B0014341E /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD89CB27CFC54B0014341E /* InfoPanelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		C7BD89B627CFB9BF0014341E /* PinchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchAppUITests.swift; sourceTree = "<group>"; };
 		C7BD89B827CFB9BF0014341E /* PinchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7BD89C927CFBCB30014341E /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		C7BD89CB27CFC54B0014341E /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		C7BD89C627CFBA090014341E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7BD89CB27CFC54B0014341E /* InfoPanelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				C7BD899E27CFB9BD0014341E /* ContentView.swift in Sources */,
 				C7BD89CA27CFBCB30014341E /* ImageExtension.swift in Sources */,
+				C7BD89CC27CFC54B0014341E /* InfoPanelView.swift in Sources */,
 				C7BD899C27CFB9BD0014341E /* PinchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

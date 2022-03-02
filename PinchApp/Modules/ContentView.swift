@@ -13,8 +13,10 @@ struct ContentView: View {
     @State private var imageOffset: CGSize = .zero
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             ZStack {
+                Color.clear
+                
                 Image.frontCoverPage
                     .pageConfiguration()
                     .opacity(isAnimating ? 1 : 0)
@@ -51,6 +53,12 @@ struct ContentView: View {
             .onAppear {
                 isAnimating = true
             }
+            .overlay(
+                InfoPanelView(scale: imageScale, offSet: imageOffset)
+                    .padding(.horizontal)
+                    .padding(.top, 30)
+                , alignment: .top
+            )
         }//: NAVIGATION VIEW
         .navigationViewStyle(.stack)
     }
