@@ -10,6 +10,9 @@ import SwiftUI
 struct ThumbnailsView: View {
     
     @Binding var isDrawerOpen: Bool
+    @Binding var isAnimating: Bool
+    @Binding var pageSelected: Int
+    @Binding var thumbs: [Page]
     
     var body: some View {
         HStack(spacing: 12) {
@@ -20,10 +23,26 @@ struct ThumbnailsView: View {
                 .padding(8)
                 .foregroundStyle(.secondary)
                 .onTapGesture {
-                    withAnimation(.spring(response: 0.5, dampingFraction: 0.7, blendDuration: 1)) {
+                    withAnimation(.springStandard) {
                         isDrawerOpen.toggle()
                     }
                 }
+            
+            //MARK: - SET THUMBNAILS
+            ForEach(thumbs) { page in
+                Image(page.thumbnail)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80)
+                    .cornerRadius(8)
+                    .shadow(radius: 4)
+                    .opacity(isDrawerOpen ? 1 : 0)
+                    .animation(.easeOut(duration: 0.5), value: isDrawerOpen)
+                    .onTapGesture {
+                        isAnimating = true
+                        pageSelected = page.id
+                    }
+            }
             Spacer()
         }
         .padding(EdgeInsets(top: 16, leading: 8, bottom: 16, trailing: 8))
@@ -34,7 +53,7 @@ struct ThumbnailsView: View {
 
 struct ThumbnailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ThumbnailsView(isDrawerOpen: .constant(false))
+        ThumbnailsView(isDrawerOpen: .constant(true), isAnimating: .constant(false), pageSelected: .constant(0), thumbs: .constant(pagesData))
             .previewLayout(.sizeThatFits)
             .preferredColorScheme(.dark)
             .padding()

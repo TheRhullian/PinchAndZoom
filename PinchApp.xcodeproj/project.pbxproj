@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C7BCC15D27D54F0200BFCC3B /* ThumbnailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC15C27D54F0200BFCC3B /* ThumbnailsView.swift */; };
+		C7BCC16027D5587600BFCC3B /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC15F27D5587600BFCC3B /* PageModel.swift */; };
+		C7BCC16327D558D700BFCC3B /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC16227D558D700BFCC3B /* PageData.swift */; };
 		C7BD899C27CFB9BD0014341E /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD899B27CFB9BD0014341E /* PinchApp.swift */; };
 		C7BD899E27CFB9BD0014341E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD899D27CFB9BD0014341E /* ContentView.swift */; };
 		C7BD89A027CFB9BE0014341E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BD899F27CFB9BE0014341E /* Assets.xcassets */; };
@@ -17,6 +19,7 @@
 		C7BD89B927CFB9BF0014341E /* PinchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD89B827CFB9BF0014341E /* PinchAppUITestsLaunchTests.swift */; };
 		C7BD89CA27CFBCB30014341E /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD89C927CFBCB30014341E /* ImageExtension.swift */; };
 		C7BD89CC27CFC54B0014341E /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD89CB27CFC54B0014341E /* InfoPanelView.swift */; };
+		C7CEE87327D55F3B00B756D4 /* AnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CEE87227D55F3B00B756D4 /* AnimationExtension.swift */; };
 		C7EFE6BE27D53A4000762BA9 /* ButtonSFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EFE6BD27D53A4000762BA9 /* ButtonSFView.swift */; };
 		C7EFE6C027D53B0200762BA9 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EFE6BF27D53B0200762BA9 /* ControlPanelView.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		C7BCC15C27D54F0200BFCC3B /* ThumbnailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailsView.swift; sourceTree = "<group>"; };
+		C7BCC15F27D5587600BFCC3B /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		C7BCC16227D558D700BFCC3B /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 		C7BD899827CFB9BD0014341E /* PinchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BD899B27CFB9BD0014341E /* PinchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 		C7BD899D27CFB9BD0014341E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		C7BD89B827CFB9BF0014341E /* PinchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7BD89C927CFBCB30014341E /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		C7BD89CB27CFC54B0014341E /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		C7CEE87227D55F3B00B756D4 /* AnimationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExtension.swift; sourceTree = "<group>"; };
 		C7EFE6BD27D53A4000762BA9 /* ButtonSFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSFView.swift; sourceTree = "<group>"; };
 		C7EFE6BF27D53B0200762BA9 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,9 +87,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7BCC15E27D5586900BFCC3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7BCC15F27D5587600BFCC3B /* PageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7BCC16127D558C900BFCC3B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C7BCC16227D558D700BFCC3B /* PageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		C7BD898F27CFB9BD0014341E = {
 			isa = PBXGroup;
 			children = (
+				C7CEE87227D55F3B00B756D4 /* AnimationExtension.swift */,
 				C7BD899A27CFB9BD0014341E /* PinchApp */,
 				C7BD89AB27CFB9BF0014341E /* PinchAppTests */,
 				C7BD89B527CFB9BF0014341E /* PinchAppUITests */,
@@ -104,6 +127,8 @@
 		C7BD899A27CFB9BD0014341E /* PinchApp */ = {
 			isa = PBXGroup;
 			children = (
+				C7BCC16127D558C900BFCC3B /* Data */,
+				C7BCC15E27D5586900BFCC3B /* Model */,
 				C7BD89C827CFBA290014341E /* Utilities */,
 				C7BD89C727CFBA1C0014341E /* Resources */,
 				C7BD89C627CFBA090014341E /* Views */,
@@ -304,6 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7BCC16027D5587600BFCC3B /* PageModel.swift in Sources */,
+				C7BCC16327D558D700BFCC3B /* PageData.swift in Sources */,
+				C7CEE87327D55F3B00B756D4 /* AnimationExtension.swift in Sources */,
 				C7EFE6BE27D53A4000762BA9 /* ButtonSFView.swift in Sources */,
 				C7BD899E27CFB9BD0014341E /* ContentView.swift in Sources */,
 				C7BCC15D27D54F0200BFCC3B /* ThumbnailsView.swift in Sources */,

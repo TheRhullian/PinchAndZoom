@@ -13,16 +13,24 @@ struct ContentView: View {
     @State private var imageScale: CGFloat = 1
     @State private var imageOffset: CGSize = .zero
     
+    @State private var pages: [Page] = pagesData
+    @State private var pageIndex = 1
+    
     var body: some View {
         NavigationView {
             ZStack {
                 Color.clear
                 
-                Image.frontCoverPage
+                Image(getCurrentPage())
                     .pageConfiguration()
                     .opacity(isAnimating ? 1 : 0)
                     .offset(x: imageOffset.width, y: imageOffset.height)
                     .scaleEffect(imageScale)
+                    .onTapGesture(count: 1) {
+                        withAnimation(.springStandard) {
+                            isDrawerOpen = false
+                        }
+                    }
                     .onTapGesture(count: 2) {
                         switch imageScale {
                         case 1:
@@ -34,7 +42,7 @@ struct ContentView: View {
                                 resetImageState()
                             }
                         }
-                    }
+                    }//:TAP GESTURE
                     .gesture(
                         DragGesture()
                             .onChanged({ value in
@@ -106,7 +114,7 @@ struct ContentView: View {
             )//: IMAGE CONTROL OVERLAY
             // MARK: - THUMBNAILS
             .overlay(
-                ThumbnailsView(isDrawerOpen: $isDrawerOpen)
+                ThumbnailsView(isDrawerOpen: $isDrawerOpen,isAnimating: $isAnimating, pageSelected: $pageIndex, thumbs: $pages)
                     .opacity(isAnimating ? 1 : 0)
                     .frame(width: 260)
                     .padding(.top, UIScreen.main.bounds.height/12)
@@ -118,6 +126,9 @@ struct ContentView: View {
     }
     
     // Function
+    func getCurrentPage() -> String {
+        return pages[pageIndex - 1].imageName
+    }
     func resetImageState() {
         withAnimation(.spring()) {
             imageScale = 1
