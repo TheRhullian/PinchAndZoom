@@ -55,6 +55,14 @@ extension Image {
         Image(systemName: "arrow.up.left.and.down.right.magnifyingglass")
     }
     
+    static var systemChevronLeft: Image {
+        Image(systemName: "chevron.compact.left")
+    }
+    
+    static var systemChevronRight: Image {
+        Image(systemName: "chevron.compact.right")
+    }
+    
     // METHODS
     func symbolConfiguration() -> some View {
         self

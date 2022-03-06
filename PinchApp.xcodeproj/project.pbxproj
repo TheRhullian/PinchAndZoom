@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7BCC15D27D54F0200BFCC3B /* ThumbnailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC15C27D54F0200BFCC3B /* ThumbnailsView.swift */; };
 		C7BD899C27CFB9BD0014341E /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD899B27CFB9BD0014341E /* PinchApp.swift */; };
 		C7BD899E27CFB9BD0014341E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD899D27CFB9BD0014341E /* ContentView.swift */; };
 		C7BD89A027CFB9BE0014341E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BD899F27CFB9BE0014341E /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C7BCC15C27D54F0200BFCC3B /* ThumbnailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailsView.swift; sourceTree = "<group>"; };
 		C7BD899827CFB9BD0014341E /* PinchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BD899B27CFB9BD0014341E /* PinchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 		C7BD899D27CFB9BD0014341E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		C7BD89C627CFBA090014341E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7BCC15C27D54F0200BFCC3B /* ThumbnailsView.swift */,
 				C7EFE6BD27D53A4000762BA9 /* ButtonSFView.swift */,
 				C7EFE6BF27D53B0200762BA9 /* ControlPanelView.swift */,
 				C7BD89CB27CFC54B0014341E /* InfoPanelView.swift */,
@@ -303,6 +306,7 @@
 			files = (
 				C7EFE6BE27D53A4000762BA9 /* ButtonSFView.swift in Sources */,
 				C7BD899E27CFB9BD0014341E /* ContentView.swift in Sources */,
+				C7BCC15D27D54F0200BFCC3B /* ThumbnailsView.swift in Sources */,
 				C7BD89CA27CFBCB30014341E /* ImageExtension.swift in Sources */,
 				C7EFE6C027D53B0200762BA9 /* ControlPanelView.swift in Sources */,
 				C7BD89CC27CFC54B0014341E /* InfoPanelView.swift in Sources */,
