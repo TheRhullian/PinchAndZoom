@@ -59,6 +59,30 @@ struct ContentView: View {
                     .padding(.top, 30)
                 , alignment: .top
             )
+            .overlay(
+                ImageControlPanelView(minusAction: {
+                    withAnimation(.spring()) {
+                        if imageScale > 1 {
+                            imageScale -= 1
+                            
+                            (imageScale <= 1) ? resetImageState() : ()
+                        }
+                    }
+                }, plusAction: {
+                    withAnimation(.spring()) {
+                        if imageScale < 5 {
+                            imageScale += 1
+                            
+                            imageScale = (imageScale > 5) ? 5 : imageScale
+                        }
+                    }
+                }, resizeAction: {
+                    resetImageState()
+                })
+                    .padding(.bottom, 30)
+                    .opacity(isAnimating ? 1 : 0)
+                , alignment: .bottom
+            )
         }//: NAVIGATION VIEW
         .navigationViewStyle(.stack)
     }

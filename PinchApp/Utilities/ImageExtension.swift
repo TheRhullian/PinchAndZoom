@@ -43,6 +43,18 @@ extension Image {
         Image(systemName: "arrow.up.and.down")
     }
     
+    static var systemMinusMagnifyingGlass: Image {
+        Image(systemName: "minus.magnifyingglass")
+    }
+    
+    static var systemPlusMagnifyingGlass: Image {
+        Image(systemName: "plus.magnifyingglass")
+    }
+    
+    static var systemArrowUpDownMagnifyingGlass: Image {
+        Image(systemName: "arrow.up.left.and.down.right.magnifyingglass")
+    }
+    
     // METHODS
     func symbolConfiguration() -> some View {
         self
